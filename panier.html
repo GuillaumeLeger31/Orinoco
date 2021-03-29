@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://kit.fontawesome.com/b4a8f51e6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Oriphotos - Panier</title>
+</head>
+
+<body>
+    <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-lg navbar-dark">
+                    <img src="images/logo.png" width="50" height="50" alt="Info Logo" />
+                    <a class="navbar-brand ml-2" href="index.html">Oriphotos</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="panier.html">Panier <span id="Numberarticle"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container" id="panier">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Votre panier :</h1>
+                </div>
+            </div>
+
+            <div class="row text-center" id="mainform">
+                <div class="col" id="leftform">
+                    <div id="Sectionpanier">
+                        <p id="panierVide">Votre panier est vide.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row mt-4">
+                    <form id="formulaire">
+                        <h3 class="mb-4">Civilité</h3>
+                        <div>
+                            <label for="Nomform" class="labelform">Nom :</label>
+                            <input type="text" id="Nomform" name="Nomform" placeholder="Nom" required>
+                        </div>
+                        <div>
+                            <label for="Prénom" class="labelform">Prénom :</label>
+                            <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" required>
+                        </div>
+                        <div>
+                            <label for="Email" class="labelform">Adresse mail :</label>
+                            <input type="email" name="Email" id="Email" placeholder="Email" required>
+                        </div>
+                        </fieldset>
+                        <fieldset class="facturation">
+                            <legend>Adresse de facturation</legend>
+                            <div>
+                                <label for="Adresse" class="labelform">Adresse :</label>
+                                <input type="text" name="Adresse" id="Adresse" placeholder="Adresse" required>
+                            </div>
+                            <div>
+                                <label for="Ville" class="labelform">Ville :</label>
+                                <input type="text" name="Ville" id="Ville" placeholder="Ville" required>
+                            </div>
+                            <div>
+                                <label for="Codepostal" class="labelform">Code postal :</label>
+                                <input type="number" name="Codepostal" id="Codepostal" placeholder="Code postal"
+                                    required>
+                            </div>
+                            <div class="row mt-4 mb-4">
+                                <button class=" btn btn-success" type="submit" type="button">Commander</button>
+                            </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item"><a href="#">À propos</a></li>
+                                <li class="list-inline-item">&middot;</li>
+                                <li class="list-inline-item"><a href="#">Vie privée</a></li>
+                                <li class="list-inline-item">&middot;</li>
+                                <li class="list-inline-item"><a href="#">Conditions d'utilisations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./panier.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
