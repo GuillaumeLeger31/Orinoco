@@ -94,7 +94,7 @@ const commandeUser = {
     contact: {},
     products: [],
 }
-
+ 
 document.getElementById("formulaire").addEventListener("submit", function (event) {
     event.preventDefault();
 

@@ -9,6 +9,7 @@ async function selectionProduit() {
     fetch("http://localhost:3000/api/cameras/" + camId).then(function (response) {
         response.json().then(function (data) {
             camData = data;
+            console.log(camData);
 
             /* On vient cibler la balise div ayant pour id Descriptionproduit */
             let descriptionProduit = document.getElementById("Descriptionproduit");
