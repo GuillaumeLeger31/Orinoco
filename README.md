@@ -10,7 +10,7 @@
 ## Installation et démarrage du Backend
 
 * Ouvrez votre terminal
-* Allez dans le dossier backend : `cd API_Groupomania\api` .
+* Allez dans le dossier backend : `cd OORINOCO` .
 * Installez toutes les dépendances du projet : `npm install`.
 * Démarrez le serveur : `node server`.
 
